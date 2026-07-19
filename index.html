@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pour Louise 💌</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@300;400;600;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero pattern-bg">
+    <div class="heart" style="top:12%; left:10%; font-size:1.4rem;">💗</div>
+    <div class="heart green" style="top:20%; right:12%; font-size:1.1rem;">💚</div>
+    <div class="heart" style="bottom:18%; left:16%; font-size:1.2rem;">💕</div>
+    <div class="heart green" style="bottom:24%; right:10%; font-size:1rem;">💚</div>
+
+    <div class="kitty">
+      <div class="ear l"></div><div class="ear r"></div>
+      <div class="face"></div>
+      <div class="bow"></div>
+      <div class="whisker l1"></div><div class="whisker l2"></div>
+      <div class="whisker r1"></div><div class="whisker r2"></div>
+    </div>
+
+    <div class="eyebrow">Pour toi, Louise</div>
+    <h1>Notre premier mois 💕</h1>
+    <div class="sub">un petit cadeau fait avec beaucoup d'amour (et un peu de code)</div>
+    <button class="btn" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">C'est parti ! 🎀</button>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="section-title">Nos petits moments 💗</div>
+    <div class="section-sub">déjà tellement de souvenirs en si peu de temps</div>
+    <div class="grid" id="grid">
+      <figure><img src="photo1.jpeg" alt="souvenir 1" loading="lazy"></figure>
+      <figure><img src="photo2.jpeg" alt="souvenir 2" loading="lazy"></figure>
+      <figure><img src="photo3.jpeg" alt="souvenir 3" loading="lazy"></figure>
+      <figure><img src="photo4.jpeg" alt="souvenir 4" loading="lazy"></figure>
+      <figure><img src="photo5.jpeg" alt="souvenir 5" loading="lazy"></figure>
+      <figure><img src="photo6.jpeg" alt="souvenir 6" loading="lazy"></figure>
+      <figure><img src="photo7.jpeg" alt="souvenir 7" loading="lazy"></figure>
+      <figure><img src="photo8.jpeg" alt="souvenir 8" loading="lazy"></figure>
+      <figure><img src="photo9.jpeg" alt="souvenir 9" loading="lazy"></figure>
+    </div>
+    <div class="center-btn">
+      <button class="btn green" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">C'est jamais fini ! 🐾</button>
+    </div>
+  </section>
+
+  <section class="letter-section pattern-bg" id="letter">
+    <div class="letter">
+      <h2>Ma Louise,</h2>
+      <p>Ça ne fait qu'un mois, et pourtant j'ai l'impression que tu fais déjà partie de mon quotidien depuis bien plus longtemps que ça.</p>
+      <p>Je suis sincèrement amoureux de toi. Je crois que je n'avais jamais eu autant envie de m'investir dans une relation avant la nôtre. Chaque moment passé avec toi, je l'ai apprécié, vraiment, même les plus simples.</p>
+      <p>Tu me motives plus que tu ne l'imagines : les matins où j'ai la flemme d'aller à la salle, penser à toi me pousse à y aller quand même. Les jours où je pourrais tout remettre à demain, c'est en partie grâce à toi que j'avance et que je fais mes journées sans procrastiner.</p>
+      <p>Ce n'est qu'un début, et j'ai hâte d'écrire la suite de notre histoire avec toi.</p>
+      <div class="sign">— Adam 🐾</div>
+    </div>
+
+    <div class="game-wrap">
+      <div class="game-hint">Essaie d'attraper le bouton... 😏</div>
+      <div class="game-box" id="gameBox">
+        <button id="loveBtn" onclick="loveClick()">Je t'aime</button>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="progress-label" id="progressLabel">0%</div>
+    </div>
+  </section>
+
+  <section class="final-section" id="final">
+    <div class="big-heart">❤️</div>
+    <h2>Je t'aime mon amour❤️</h2>
+    <div class="sub">Joyeux anniversaire de couple</div>
+  </section>
+
+  <footer>fait avec un peu de code et beaucoup plus d'amour 🎀</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
